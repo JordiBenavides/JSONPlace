@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				127B601B93A84757D55353D2 /* Pods-JSONPlace.debug.xcconfig */,
 				B032754AAFA2493C7334B887 /* Pods-JSONPlace.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,63 @@
 		9DA7BBA4256EBEE400BC81E2 /* JSONPlace */ = {
 			isa = PBXGroup;
 			children = (
-				9DA7BBA5256EBEE400BC81E2 /* AppDelegate.swift */,
-				9DA7BBA7256EBEE400BC81E2 /* SceneDelegate.swift */,
-				9DA7BBA9256EBEE400BC81E2 /* ViewController.swift */,
-				9DA7BBAB256EBEE400BC81E2 /* Main.storyboard */,
-				9DA7BBAE256EBEF000BC81E2 /* Assets.xcassets */,
-				9DA7BBB0256EBEF000BC81E2 /* LaunchScreen.storyboard */,
-				9DA7BBB3256EBEF000BC81E2 /* Info.plist */,
+				9DA7BBB9256EC0B200BC81E2 /* Application */,
+				9DA7BBBA256EC0C300BC81E2 /* Model */,
+				9DA7BBBB256EC0E100BC81E2 /* Network */,
+				9DA7BBBC256EC0FB00BC81E2 /* Controller */,
+				9DA7BBBD256EC10D00BC81E2 /* Resources */,
 			);
 			path = JSONPlace;
+			sourceTree = "<group>";
+		};
+		9DA7BBB9256EC0B200BC81E2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BBA7256EBEE400BC81E2 /* SceneDelegate.swift */,
+				9DA7BBA5256EBEE400BC81E2 /* AppDelegate.swift */,
+				9DA7BBB3256EBEF000BC81E2 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9DA7BBBA256EC0C300BC81E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DA7BBBB256EC0E100BC81E2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9DA7BBBC256EC0FB00BC81E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BBA9256EBEE400BC81E2 /* ViewController.swift */,
+				9DA7BBBE256EC11E00BC81E2 /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DA7BBBD256EC10D00BC81E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BBB0256EBEF000BC81E2 /* LaunchScreen.storyboard */,
+				9DA7BBAB256EBEE400BC81E2 /* Main.storyboard */,
+				9DA7BBAE256EBEF000BC81E2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DA7BBBE256EC11E00BC81E2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JSONPlace/Info.plist;
+				INFOPLIST_FILE = JSONPlace/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,7 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JSONPlace/Info.plist;
+				INFOPLIST_FILE = JSONPlace/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
