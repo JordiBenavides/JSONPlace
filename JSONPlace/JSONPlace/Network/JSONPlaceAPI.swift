@@ -17,12 +17,12 @@ enum JSONPlaceAPI {
 }
 
 extension JSONPlaceAPI:TargetType,AccessTokenAuthorizable {
-    public var baseURL: URL {  return URL(string: "https://jsonplaceholder.typicode.com/todos//")!}
+    public var baseURL: URL {  return URL(string: "https://jsonplaceholder.typicode.com/")!}
     
     public var path: String {
         switch self {
         case .getJSONPlace:
-            return "employees"
+            return "todos"
             
         //case .getEmploById(id: let id):
         //    return "employee/\(id)"

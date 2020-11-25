@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     let provider = MoyaProvider<JSONPlaceAPI>()
+    var data: [JSONPlace]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             switch result {
             case .success(let response):
                 print("success")
-//                 let array: [Employees] = try! response.map(ResponseArrayAPI.self).data
-//                self.data = array
-//                self.tableView.reloadData()
+                let array = try! response.map([JSONPlace].self)
+                 self.data = array
+                 self.tableView.reloadData()
             case .failure:
                 print("Error")
             }
@@ -48,12 +49,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as? CustomTableViewCell
+        let jsonplace = data?[indexPath.row]
+        cell?.configure(jsonplace: jsonplace)
+        
+        return cell ?? UITableViewCell()
     }
 
 }

@@ -10,6 +10,10 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelTitle: UILabel!
+    
+    var data: JSONPlace?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,7 +22,11 @@ class CustomTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
+    func configure(jsonplace: JSONPlace?) {
+        
+        self.data = jsonplace
+        labelTitle.text = self.data?.title
+    }
 }
