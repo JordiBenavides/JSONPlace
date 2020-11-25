@@ -16,6 +16,7 @@
 		9DA7BBB2256EBEF000BC81E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BBB0256EBEF000BC81E2 /* LaunchScreen.storyboard */; };
 		9DA7BBC1256EC32900BC81E2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BBBF256EC32900BC81E2 /* CustomTableViewCell.swift */; };
 		9DA7BBC2256EC32900BC81E2 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BBC0256EC32900BC81E2 /* CustomTableViewCell.xib */; };
+		9DA7BBC4256ED10E00BC81E2 /* JSONPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BBC3256ED10E00BC81E2 /* JSONPlace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9DA7BBB3256EBEF000BC81E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA7BBBF256EC32900BC81E2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9DA7BBC0256EC32900BC81E2 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		9DA7BBC3256ED10E00BC81E2 /* JSONPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlace.swift; sourceTree = "<group>"; };
 		B032754AAFA2493C7334B887 /* Pods-JSONPlace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONPlace.release.xcconfig"; path = "Target Support Files/Pods-JSONPlace/Pods-JSONPlace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 		9DA7BBBB256EC0E100BC81E2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9DA7BBC3256ED10E00BC81E2 /* JSONPlace.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA7BBAA256EBEE400BC81E2 /* ViewController.swift in Sources */,
+				9DA7BBC4256ED10E00BC81E2 /* JSONPlace.swift in Sources */,
 				9DA7BBA6256EBEE400BC81E2 /* AppDelegate.swift in Sources */,
 				9DA7BBC1256EC32900BC81E2 /* CustomTableViewCell.swift in Sources */,
 				9DA7BBA8256EBEE400BC81E2 /* SceneDelegate.swift in Sources */,

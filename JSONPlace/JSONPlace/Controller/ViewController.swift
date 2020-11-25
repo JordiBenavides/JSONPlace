@@ -12,15 +12,40 @@ import Moya
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-
     @IBOutlet weak var tableView: UITableView!
+    
+    let provider = MoyaProvider<JSONPlaceAPI>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        requestJSONPlace()
+        setTable()
     }
 
+    func setTable(){
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+        
+    }
+    
+    func requestJSONPlace(){
+        
+        provider.request(.getJSONPlace) { result in
+            switch result {
+            case .success(let response):
+                print("success")
+//                 let array: [Employees] = try! response.map(ResponseArrayAPI.self).data
+//                self.data = array
+//                self.tableView.reloadData()
+            case .failure:
+                print("Error")
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 0
