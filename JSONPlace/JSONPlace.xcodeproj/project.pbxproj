@@ -18,6 +18,7 @@
 		9DA7BBC2256EC32900BC81E2 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BBC0256EC32900BC81E2 /* CustomTableViewCell.xib */; };
 		9DA7BBC4256ED10E00BC81E2 /* JSONPlaceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BBC3256ED10E00BC81E2 /* JSONPlaceAPI.swift */; };
 		9DA7BBC6256ED3BF00BC81E2 /* JSONPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BBC5256ED3BF00BC81E2 /* JSONPlace.swift */; };
+		9DA7BBC8256EDE2900BC81E2 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BBC7256EDE2900BC81E2 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		9DA7BBC0256EC32900BC81E2 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		9DA7BBC3256ED10E00BC81E2 /* JSONPlaceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceAPI.swift; sourceTree = "<group>"; };
 		9DA7BBC5256ED3BF00BC81E2 /* JSONPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlace.swift; sourceTree = "<group>"; };
+		9DA7BBC7256EDE2900BC81E2 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		B032754AAFA2493C7334B887 /* Pods-JSONPlace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONPlace.release.xcconfig"; path = "Target Support Files/Pods-JSONPlace/Pods-JSONPlace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA7BBA9256EBEE400BC81E2 /* ViewController.swift */,
+				9DA7BBC7256EDE2900BC81E2 /* ViewController2.swift */,
 				9DA7BBBE256EC11E00BC81E2 /* Cell */,
 			);
 			path = Controller;
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA7BBC8256EDE2900BC81E2 /* ViewController2.swift in Sources */,
 				9DA7BBAA256EBEE400BC81E2 /* ViewController.swift in Sources */,
 				9DA7BBC6256ED3BF00BC81E2 /* JSONPlace.swift in Sources */,
 				9DA7BBC4256ED10E00BC81E2 /* JSONPlaceAPI.swift in Sources */,

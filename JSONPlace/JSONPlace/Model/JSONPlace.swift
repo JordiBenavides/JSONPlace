@@ -13,3 +13,9 @@ struct JSONPlace: Codable {
     let id: Int
     let title: String
 }
+
+struct JSONPlace2: Codable {
+    
+//    let id: String
+    let title: String
+}

@@ -61,5 +61,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell ?? UITableViewCell()
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let vc = storyboard.instantiateViewController(withIdentifier: "ViewController2") as? ViewController2 else { return }
+        vc.data = data?[indexPath.row]
+            navigationController?.pushViewController(vc,
+                                               animated: true)
+        
+    }
 }
 

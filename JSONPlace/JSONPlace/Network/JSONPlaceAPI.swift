@@ -12,7 +12,7 @@ import Moya
 enum JSONPlaceAPI {
     
     case getJSONPlace
-   // case getEmploById(id: String)
+    case getJSONById(id: Int)
     
 }
 
@@ -24,8 +24,8 @@ extension JSONPlaceAPI:TargetType,AccessTokenAuthorizable {
         case .getJSONPlace:
             return "todos"
             
-        //case .getEmploById(id: let id):
-        //    return "employee/\(id)"
+        case .getJSONById(id: let id):
+            return "todos/\(id)"
             
         }
         
@@ -36,8 +36,8 @@ extension JSONPlaceAPI:TargetType,AccessTokenAuthorizable {
         case .getJSONPlace:
             return .get
             
-       // case .getEmploById(id: _):
-          //  return .get
+        case .getJSONById(id: _):
+            return .get
             
         }
     }
@@ -47,8 +47,8 @@ extension JSONPlaceAPI:TargetType,AccessTokenAuthorizable {
         case .getJSONPlace:
             return .bearer
             
-       // case .getEmploById(id: _):
-          //  return .bearer
+        case .getJSONById(id: _):
+            return .bearer
             
         }
     }
@@ -58,8 +58,8 @@ extension JSONPlaceAPI:TargetType,AccessTokenAuthorizable {
         case .getJSONPlace:
             return .requestPlain
             
-       // case .getEmploById(id: _):
-          //  return .requestPlain
+        case .getJSONById(id: _):
+            return .requestPlain
             
         }
     }
